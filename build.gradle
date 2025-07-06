@@ -14,7 +14,6 @@ version                      = '0.1-SNAPSHOT'
 sourceCompatibility          = JavaLanguageVersion.of(21)
 targetCompatibility          = JavaLanguageVersion.of(21)
 compileJava.options.encoding = 'UTF-8'
-compileTestJava.options.encoding = 'UTF-8'
 
 repositories {
 	mavenCentral()
@@ -40,10 +39,6 @@ publishing {
 			from components.java
 		}
 	}
-}
-
-dependencies {
-	testImplementation 'junit:junit:4.13.2'
 }
 
 javadoc {
